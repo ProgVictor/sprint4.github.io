@@ -4,14 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lib/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>About</title>
+    <style>
+        li{
+            font-style: bold;
+        }
+    </style>
 </head>
 <body>
-    <a href="/about.html">About</a>
-    <a href="bt.html">Főoldal</a>
-    <a href="login.html">Login</a>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navigációs sáv</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/bt.html">Jelenlegi weboldal: Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/bt.html">Gombok weboldala</a>
+              </li>
+              <li class="nav-item dropdown">
+                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Bejelentkezés</a> </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/order-form.html">Rendelés leadása</a>
+                    </li>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link">Disabled</a> -->
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Írjon ide a kereséshez!" aria-label="keresoMezo">
+              <button class="btn btn-outline-success" type="submit">Keresés</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   
     <div class="container">
         <div class="row">
             <div class="col-2"></div>
@@ -74,35 +119,43 @@
             
         </div>
         <i class="fa-solid fa-code"></i>
-        
+<h1><b>A vállalati webfejlesztés alapjai</b></h1>
+<h3>Űrlapok készítése</h3>
+<h6><u>Font Awesome ikonok</u></h6>
+
+<i>Sokkal szebb tud lenni egy vezérlőgomb vagy egy menüpont, ha teszel rá egy ikont. Erre a legjobb megoldás valamilyen webfont használata. Ezek olyan betűkészletek, amelyek nem betűket, hanem ábrákat tartalmaznak.</i>
+<i>A Font Awesome nevűt nagyon egyszerűen használhatod:</i>
+
+<ol>
+    <li>Ágyazd be a CSS -t:</li>
+    <li>Válaszd ki a neked tetsző ikont a listából: Ikonok</li>
+    <li>Illeszd be a doksi alapján:</li>
+</ol>
+<h1>Dokumentáció</h1>
+<a href="https://fontawesome.com/" alt="Link megtekintéshez kattintson!" title="Egy link! :) ">Font Awesome</a>
+
+<p><h1>CSAK PÁR KÉRDÉS!</h1></p>
+
+<ol>
+    <li>A css szelektor: azok a p elemek, amik a „red”-re végződő nevű osztályhoz tartoznak.</li>
+    <li>Hány oszlopos a Bootstrap grid rendszerének felosztása?</li>
+    <li>Melyik CSS utasítást használjam, ha az „urgent” osztályú elemek szövegét szeretném kékre állítani. </li>
+    <li>Melyik memóriahierarchia helyes a kapacitás függvényében? (legkisebb-> legnagyobb)</li>
+    <li>A rádiótípusú input elemeknek melyik attribútuma kell, hogy megegyezzen? </li>
+    <li>Melyik osztály teszi csíkossá a táblázat sorait? </li>
+    <li>Melyik parancs használható arra, hogy megmutassa a számítógépünk milyen portokon, kommunikációs kapukon keresztül milyen más gépekkel vagy hálózati eszközökkel áll kapcsolatban? </li>
+    <li>Igaz-e az az állítás, hogy a felhasználói profilok az egyes felhasználók egyedi beállításait tartalmazzák</li>
+    <li>A label melyik attribútumában adom meg, hogy melyik inputhoz tartozik? </li>
+    <li>Igaz-e vajon a következő állítás? <i>Az SSD forgó tányérokat tartalmaz, a HDD-ben nincsen mozgó alkatrész.</i> </li>
+    <li>Melyek privát ( RFC1918 ) IP-hálózatok? </li>
+    <li>Igaz vagy hamis az az állítás, hogy a <i><u>btn-urgent</u></i> Bootstrap button osztály. </li>
+    <li>Melyik bootstrap osztály formázza meg a formok input és select elemeit? </li>
+    <li>Melyik szelektor választja ki azt a p elemet, amelyik a container osztályú divben van, és éppen a felette van az egérmutató? </li>
+    <li>Mi jellemző a blokk szintű elemekre? </li>
+    <li>Mit jelent a git-scm kifejezésben az „scm” rövidítés? </li>
+    <li>A <i> szelektor, property, value</i> egy CSS utasítás részét képezik?</li> <u>IGEN</u> vagy <u>NEM</u>
+    <li>Mi lesz az eredménye a <i>”22” + 2</i> kifejezésnek?</li>
+</ol>
 </body>
 </html>
 
-<!-- A vállalati webfejlesztés alapjai
-Űrlapok készítése
-Font Awesome ikonok
-
-Ikonok
-Sokkal szebb tud lenni egy vezérlőgomb vagy egy menüpont, ha teszel rá egy ikont. Erre a legjobb megoldás valamilyen webfont használata. Ezek olyan betűkészletek, amelyek nem betűket, hanem ábrákat tartalmaznak.
-A Font Awesome nevűt nagyon egyszerűen használhatod:
-
-1. Ágyazd be a CSS -t:
-﻿ \tt <link\,\,rel="stylesheet"\,\,<linkrel="stylesheet"﻿ ﻿ \tt href="https://href="https://﻿﻿ \tt use.fontawesome.comuse.fontawesome.com﻿﻿ \tt /releases/v5.8.1/css/all.css">/releases/v5.8.1/css/all.css">﻿
-2. Válaszd ki a neked tetsző ikont a listából: Ikonok
-
-3. Illeszd be a doksi alapján:
-﻿ \tt <i\,\,class="fas\,\,fa{\text{-}}cart<iclass="fasfa-cart﻿﻿ \tt {\text{-}}arrow{\text{-}}down"></i>-arrow-down"></i>﻿
-Akár ilyen szép is lehet a végeredmény:
-
-Dokumentáció
-https://fontawesome.com/
-Példakód
-
-
-99:14
-
-
-
-
-
-Menü-->
